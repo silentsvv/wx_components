@@ -1,0 +1,51 @@
+.cell {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 30rpx;
+  height: 88rpx;
+  font-size: 28rpx;
+  background: #fff;
+  border-bottom: 1rpx solid #eee;
+}
+
+.cell .cell__text {
+  color: #333;
+}
+
+.cell .cell__input {
+  width: 400rpx;
+}
+
+.cell .cell__input .cell__input__value {
+  width: 400rpx;
+  text-align: right;
+}
+
+
+.cell__arrow {
+  display: flex;
+  align-items: center;
+}
+
+.cell .cell__arrow .cell__arrow__text {
+  color: #777;
+}
+
+.cell .cell__arrow .cell__arrow__icon {
+  margin-top: 2rpx;
+  margin-left: 18rpx; 
+  width: 13rpx;
+  height: 24rpx;
+}
+
+.cell .cell__input .align__left {
+   text-align: left;
+ }
+.cell__text__left{
+  width: 150rpx;
+}
+.cell__input__left{
+  width: 540rpx;
+}

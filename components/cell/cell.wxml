@@ -1,0 +1,27 @@
+<block wx:if="{{type == 'link'}}">
+  <view class="cell">
+    <view class="cell__text">{{title}}</view>
+    <view class="cell__arrow">
+      <text class="cell__arrow__text">{{link}}</text>
+      <image class="cell__arrow__icon" src="../../../images/arrow.png" wx:if="{{showArrow}}"></image>
+    </view>
+  </view>
+</block>
+
+<block wx:if="{{type == 'input'}}">
+  <view class="cell">
+    <view class="cell__text">{{title}}</view>
+    <view class="cell__input">
+      <input type="text" class="cell__input__value"  maxlength="{{maxlength?maxlength:'-1'}}" value="{{value}}" placeholder="{{placeholder}}" bindinput="inputEvent" bindfocus="focusEvent" bindblur="blurEvent"/>
+    </view>
+  </view>
+</block>
+
+<block wx:if="{{type == 'input_left'}}">
+  <view class="cell">
+    <view class="cell__text cell__text__left">{{title}}</view>
+    <view class="cell__input cell__input__left">
+      <input type="text" class="align__left" maxlength="{{maxlength?maxlength:'-1'}}" value="{{value}}" placeholder="{{placeholder}}"  bindinput="inputEvent" bindfocus="focusEvent" bindblur="blurEvent"/>
+    </view>
+  </view>
+</block>
